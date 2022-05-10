@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\Veri Yapıları Kitap\Sıralama-Algoritmaları\Sıralama-Algoritmaları\Source.cpp(121,13): warning C4018: '>=': signed/unsigned mismatch
+D:\Veri Yapıları Kitap\Sıralama-Algoritmaları\Sıralama-Algoritmaları\Source.cpp(147,13): warning C4018: '>=': signed/unsigned mismatch
+D:\Veri Yapıları Kitap\Sıralama-Algoritmaları\Sıralama-Algoritmaları\Source.cpp(196,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Sıralama-Algoritmaları.vcxproj -> D:\Veri Yapıları Kitap\Sıralama-Algoritmaları\Debug\Sıralama-Algoritmaları.exe
