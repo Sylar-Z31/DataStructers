@@ -3,6 +3,7 @@
 #include<string>
 #include<cstring>
 #include<chrono>
+#include<vector>
 
 using namespace std;
 using namespace std::chrono;
@@ -135,12 +136,12 @@ void MyCountingSort2(int* arr, unsigned int size)
 	unsigned int i, j, k = 0, count = 0; // k elemanlarýmýz olacak count ise hangi elemandan kaç tane oldugunu anlamamýz icin yardýmcý degisken olacak
 	int max = arr[0], min = arr[0]; // dizideki en buyuk ve en kucuk elemanlarý 0. indisteki eleman kabul ettik
 
-	for (i = 1; i < size; i++) 
+	for (i = 1; i < size; i++)
 	{
 		if (arr[i] > max) { max = arr[i]; } // en büyük elemaný bulduk
 		if (arr[i] < min) { min = arr[i]; } // en kücük elemaný bulduk
 	}
-	
+
 	int* arrB = new int[max - min + 1]{}; // en büyük elemandan en kücük elemaný çýkartýp +1 eklenmiþ boyutunda yardýmcý dizi oluþturduk
 
 	for (j = 0; j < size; j++) { arrB[arr[j] - min]++; } // yardýmcý diziye hangi elemandan kac tane oldugunu söyledik
@@ -241,11 +242,11 @@ int main()
 	//GetArray(arr5, size);
 	//GetArray(arr6, size);
 	//GetArray(arr7, size);
-	
+
 
 #pragma region BubbleSortV_1
 
-	auto start = high_resolution_clock::now(); 
+	auto start = high_resolution_clock::now();
 	BubbleSortV_1(arr, size);
 	auto stop = high_resolution_clock::now();
 	GetArray(arr, size);
