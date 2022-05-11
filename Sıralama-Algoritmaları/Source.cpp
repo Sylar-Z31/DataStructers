@@ -43,6 +43,7 @@ void BubbleSortV_1(int* arr, unsigned int size)
 	}
 }
 
+
 void BubbleSortV_2(int* arr, unsigned int size)
 {
 	unsigned int i{ 0 }, j, devam{ 1 }; // devam isimli flag kullanarak buublesortun daha performanslý olmasýný sagladýk
